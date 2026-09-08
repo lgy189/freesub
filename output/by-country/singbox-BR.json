@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 AM 01 - xiaohe"
+        "🇧🇷 BR 01 - laolin",
+        "🇧🇷 BR 02 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 AM 01 - xiaohe"
+        "🇧🇷 BR 01 - laolin",
+        "🇧🇷 BR 02 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },

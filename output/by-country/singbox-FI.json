@@ -6,18 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 FI 01 - xiaohe",
-        "🇫🇮 FI 02 - xiaohe",
-        "🇫🇮 FI 03 - xiaohe"
+        "🇫🇮 FI 01 - laolin",
+        "🇫🇮 FI 02 - laolin",
+        "🇫🇮 FI 03 - laolin",
+        "🇫🇮 FI 04 - laolin",
+        "🇫🇮 FI 05 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 FI 01 - xiaohe",
-        "🇫🇮 FI 02 - xiaohe",
-        "🇫🇮 FI 03 - xiaohe"
+        "🇫🇮 FI 01 - laolin",
+        "🇫🇮 FI 02 - laolin",
+        "🇫🇮 FI 03 - laolin",
+        "🇫🇮 FI 04 - laolin",
+        "🇫🇮 FI 05 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },

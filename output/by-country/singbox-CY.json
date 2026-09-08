@@ -6,22 +6,36 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - xiaohe",
-        "🇨🇾 CY 02 - xiaohe",
-        "🇨🇾 CY 03 - xiaohe",
-        "🇨🇾 CY 04 - xiaohe",
-        "🇨🇾 CY 05 - xiaohe"
+        "🇨🇾 CY 01 - laolin",
+        "🇨🇾 CY 02 - laolin",
+        "🇨🇾 CY 03 - laolin",
+        "🇨🇾 CY 04 - laolin",
+        "🇨🇾 CY 05 - laolin",
+        "🇨🇾 CY 06 - laolin",
+        "🇨🇾 CY 07 - laolin",
+        "🇨🇾 CY 08 - laolin",
+        "🇨🇾 CY 09 - laolin",
+        "🇨🇾 CY 10 - laolin",
+        "🇨🇾 CY 11 - laolin",
+        "🇨🇾 CY 12 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - xiaohe",
-        "🇨🇾 CY 02 - xiaohe",
-        "🇨🇾 CY 03 - xiaohe",
-        "🇨🇾 CY 04 - xiaohe",
-        "🇨🇾 CY 05 - xiaohe"
+        "🇨🇾 CY 01 - laolin",
+        "🇨🇾 CY 02 - laolin",
+        "🇨🇾 CY 03 - laolin",
+        "🇨🇾 CY 04 - laolin",
+        "🇨🇾 CY 05 - laolin",
+        "🇨🇾 CY 06 - laolin",
+        "🇨🇾 CY 07 - laolin",
+        "🇨🇾 CY 08 - laolin",
+        "🇨🇾 CY 09 - laolin",
+        "🇨🇾 CY 10 - laolin",
+        "🇨🇾 CY 11 - laolin",
+        "🇨🇾 CY 12 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
