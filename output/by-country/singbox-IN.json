@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - laolin",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - laolin"
+        "🇮🇳 印度 (India) 01 - laolin",
+        "🇮🇳 印度 (India) 02 - laolin",
+        "🇮🇳 印度 (India) 03 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - laolin",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - laolin"
+        "🇮🇳 印度 (India) 01 - laolin",
+        "🇮🇳 印度 (India) 02 - laolin",
+        "🇮🇳 印度 (India) 03 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
