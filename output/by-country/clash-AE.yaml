@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - laolin
   type: vless
-  server: 185.112.249.201
-  port: 8443
-  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web-socket.tgdaosheng.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 02 - laolin
-  type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -31,6 +17,79 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 02 - laolin
+  type: ss
+  server: 188.208.110.58
+  port: 8444
+  cipher: chacha20-ietf-poly1305
+  password: tunnel-astrovpn_official
+  udp: true
+- name: 🇦🇪 阿联酋 (UAE) 03 - laolin
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - laolin
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - laolin
+  type: vless
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+- name: 🇦🇪 阿联酋 (UAE) 06 - laolin
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - laolin
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: shrill-recipe-0c1d.404-a1d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +97,11 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - laolin
   - 🇦🇪 阿联酋 (UAE) 02 - laolin
+  - 🇦🇪 阿联酋 (UAE) 03 - laolin
+  - 🇦🇪 阿联酋 (UAE) 04 - laolin
+  - 🇦🇪 阿联酋 (UAE) 05 - laolin
+  - 🇦🇪 阿联酋 (UAE) 06 - laolin
+  - 🇦🇪 阿联酋 (UAE) 07 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -45,5 +109,10 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - laolin
   - 🇦🇪 阿联酋 (UAE) 02 - laolin
+  - 🇦🇪 阿联酋 (UAE) 03 - laolin
+  - 🇦🇪 阿联酋 (UAE) 04 - laolin
+  - 🇦🇪 阿联酋 (UAE) 05 - laolin
+  - 🇦🇪 阿联酋 (UAE) 06 - laolin
+  - 🇦🇪 阿联酋 (UAE) 07 - laolin
 rules:
 - MATCH,PROXIES
