@@ -18,12 +18,18 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - laolin
-  type: ss
-  server: 188.208.110.58
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - laolin
   type: vless
   server: 185.112.249.201
@@ -38,98 +44,6 @@ proxies:
     path: /proxyip=bpb.yousef.isegaro.comfp=chrome
     headers:
       Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 04 - laolin
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: relay.lunetcloud.ir
-  network: ws
-  ws-opts:
-    path: /lunetnetwork
-    headers:
-      Host: relay.lunetcloud.ir
-- name: 🇦🇪 阿联酋 (UAE) 05 - laolin
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - laolin
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - laolin
-  type: vless
-  server: 80.93.202.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime02.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08 - laolin
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - laolin
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - laolin
-  type: vless
-  server: 208.103.161.249
-  port: 80
-  uuid: a3c51f71-ffb5-4c80-a136-cee4b36d6e85
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kAmRaN01-aFgmDQ-1.KaMRan-01.wOrkeRs.DEv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,13 +52,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - laolin
   - 🇦🇪 阿联酋 (UAE) 02 - laolin
   - 🇦🇪 阿联酋 (UAE) 03 - laolin
-  - 🇦🇪 阿联酋 (UAE) 04 - laolin
-  - 🇦🇪 阿联酋 (UAE) 05 - laolin
-  - 🇦🇪 阿联酋 (UAE) 06 - laolin
-  - 🇦🇪 阿联酋 (UAE) 07 - laolin
-  - 🇦🇪 阿联酋 (UAE) 08 - laolin
-  - 🇦🇪 阿联酋 (UAE) 09 - laolin
-  - 🇦🇪 阿联酋 (UAE) 10 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,12 +60,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - laolin
   - 🇦🇪 阿联酋 (UAE) 02 - laolin
   - 🇦🇪 阿联酋 (UAE) 03 - laolin
-  - 🇦🇪 阿联酋 (UAE) 04 - laolin
-  - 🇦🇪 阿联酋 (UAE) 05 - laolin
-  - 🇦🇪 阿联酋 (UAE) 06 - laolin
-  - 🇦🇪 阿联酋 (UAE) 07 - laolin
-  - 🇦🇪 阿联酋 (UAE) 08 - laolin
-  - 🇦🇪 阿联酋 (UAE) 09 - laolin
-  - 🇦🇪 阿联酋 (UAE) 10 - laolin
 rules:
 - MATCH,PROXIES

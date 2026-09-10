@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 TH 01 - laolin",
-        "🇹🇭 TH 02 - laolin",
-        "🇹🇭 TH 03 - laolin",
-        "🇹🇭 TH 04 - laolin"
+        "🇹🇭 TH 01 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 TH 01 - laolin",
-        "🇹🇭 TH 02 - laolin",
-        "🇹🇭 TH 03 - laolin",
-        "🇹🇭 TH 04 - laolin"
+        "🇹🇭 TH 01 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },

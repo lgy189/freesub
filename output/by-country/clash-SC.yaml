@@ -15,48 +15,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇨 SC 02 - laolin
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 🇸🇨 SC 03 - laolin
-  type: vless
-  server: 141.101.114.245
-  port: 443
-  uuid: 3bb6fd82-3a15-eaea-6168-4dac2b70079e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nahan-fog-af01.dfghttr2012.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-fog-af01.dfghttr2012.workers.dev
-- name: 🇸🇨 SC 04 - laolin
-  type: vless
-  server: 172.67.148.26
-  port: 2053
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: restless-boat-ebf2.moha102030.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
-- name: 🇸🇨 SC 05 - laolin
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -66,61 +24,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇨 SC 06 - laolin
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇸🇨 SC 07 - laolin
-  type: vless
-  server: 104.21.5.173
-  port: 2096
-  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: peekconfigg.vipserver1-39d.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: peekconfigg.vipserver1-39d.workers.dev
-- name: 🇸🇨 SC 08 - laolin
-  type: vless
-  server: 104.18.32.47
-  port: 8443
-  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pubb.clnahanpnln.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: pubb.clnahanpnln.workers.dev
-- name: 🇸🇨 SC 09 - laolin
-  type: vless
-  server: 104.21.14.116
-  port: 443
-  uuid: 566c0473-382e-aabb-c62a-f5bb00000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ez-4b5fd4.appelidmymat.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-4b5fd4.appelidmymat.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -128,13 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 SC 01 - laolin
   - 🇸🇨 SC 02 - laolin
-  - 🇸🇨 SC 03 - laolin
-  - 🇸🇨 SC 04 - laolin
-  - 🇸🇨 SC 05 - laolin
-  - 🇸🇨 SC 06 - laolin
-  - 🇸🇨 SC 07 - laolin
-  - 🇸🇨 SC 08 - laolin
-  - 🇸🇨 SC 09 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -142,12 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 SC 01 - laolin
   - 🇸🇨 SC 02 - laolin
-  - 🇸🇨 SC 03 - laolin
-  - 🇸🇨 SC 04 - laolin
-  - 🇸🇨 SC 05 - laolin
-  - 🇸🇨 SC 06 - laolin
-  - 🇸🇨 SC 07 - laolin
-  - 🇸🇨 SC 08 - laolin
-  - 🇸🇨 SC 09 - laolin
 rules:
 - MATCH,PROXIES
