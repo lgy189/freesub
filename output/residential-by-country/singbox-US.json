@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - laolin"
+        "🇺🇸 美国 (United States) 01 (家宽) - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - laolin"
+        "🇺🇸 美国 (United States) 01 (家宽) - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },

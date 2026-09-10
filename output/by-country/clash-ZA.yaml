@@ -25,20 +25,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
   udp: true
-- name: 🇿🇦 ZA 04 - laolin
-  type: ss
-  server: 20.164.211.25
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
-- name: 🇿🇦 ZA 05 - laolin
-  type: ss
-  server: 20.164.211.25
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,8 +33,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - laolin
   - 🇿🇦 ZA 02 - laolin
   - 🇿🇦 ZA 03 - laolin
-  - 🇿🇦 ZA 04 - laolin
-  - 🇿🇦 ZA 05 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -57,7 +41,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - laolin
   - 🇿🇦 ZA 02 - laolin
   - 🇿🇦 ZA 03 - laolin
-  - 🇿🇦 ZA 04 - laolin
-  - 🇿🇦 ZA 05 - laolin
 rules:
 - MATCH,PROXIES
