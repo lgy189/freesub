@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 SC 01 - laolin",
-        "🇸🇨 SC 02 - laolin",
-        "🇸🇨 SC 03 - laolin",
-        "🇸🇨 SC 04 - laolin"
+        "🇸🇨 SC 01 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 SC 01 - laolin",
-        "🇸🇨 SC 02 - laolin",
-        "🇸🇨 SC 03 - laolin",
-        "🇸🇨 SC 04 - laolin"
+        "🇸🇨 SC 01 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
