@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇮 FI 01 - laolin",
+        "🇫🇮 FI 02 - laolin",
+        "🇫🇮 FI 03 - laolin",
+        "🇫🇮 FI 04 - laolin"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇮 FI 01 - laolin",
+        "🇫🇮 FI 02 - laolin",
+        "🇫🇮 FI 03 - laolin",
+        "🇫🇮 FI 04 - laolin"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

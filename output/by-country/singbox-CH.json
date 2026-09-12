@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - laolin",
-        "🇮🇪 IE 02 - laolin",
-        "🇮🇪 IE 03 - laolin"
+        "🇨🇭 CH 01 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - laolin",
-        "🇮🇪 IE 02 - laolin",
-        "🇮🇪 IE 03 - laolin"
+        "🇨🇭 CH 01 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
