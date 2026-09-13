@@ -19,19 +19,6 @@ proxies:
       Host: 38.60.168.98
 - name: 🇲🇾 MY 02 - laolin
   type: vless
-  server: anydesk.com
-  port: 8880
-  uuid: 984d10dd-4d51-45ac-a781-f0c1357644c2
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: lingering-sun-d7b5.49-56e.workers.dev
-- name: 🇲🇾 MY 03 - laolin
-  type: vless
   server: 38.60.168.98
   port: 2087
   uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - laolin
   - 🇲🇾 MY 02 - laolin
-  - 🇲🇾 MY 03 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - laolin
   - 🇲🇾 MY 02 - laolin
-  - 🇲🇾 MY 03 - laolin
 rules:
 - MATCH,PROXIES
