@@ -19,17 +19,16 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - laolin
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
+  server: 89.125.147.199
+  port: 443
   uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: random
 - name: 🇦🇪 阿联酋 (UAE) 03 - laolin
   type: vless
   server: 89.125.147.199
@@ -46,18 +45,6 @@ proxies:
   type: vless
   server: 89.125.147.199
   port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - laolin
-  type: vless
-  server: 89.125.147.199
-  port: 443
   uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
   tls: true
@@ -65,48 +52,7 @@ proxies:
   reality-opts:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 06 - laolin
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - laolin
-  type: vless
-  server: 146.70.37.253
-  port: 443
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: kkkk-xcd.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-xcd.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 08 - laolin
-  type: vless
-  server: 129.151.64.169
-  port: 31867
-  uuid: bd01efed-f999-41a5-bbb1-3d2357647f11
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,10 +62,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - laolin
   - 🇦🇪 阿联酋 (UAE) 03 - laolin
   - 🇦🇪 阿联酋 (UAE) 04 - laolin
-  - 🇦🇪 阿联酋 (UAE) 05 - laolin
-  - 🇦🇪 阿联酋 (UAE) 06 - laolin
-  - 🇦🇪 阿联酋 (UAE) 07 - laolin
-  - 🇦🇪 阿联酋 (UAE) 08 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -129,9 +71,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - laolin
   - 🇦🇪 阿联酋 (UAE) 03 - laolin
   - 🇦🇪 阿联酋 (UAE) 04 - laolin
-  - 🇦🇪 阿联酋 (UAE) 05 - laolin
-  - 🇦🇪 阿联酋 (UAE) 06 - laolin
-  - 🇦🇪 阿联酋 (UAE) 07 - laolin
-  - 🇦🇪 阿联酋 (UAE) 08 - laolin
 rules:
 - MATCH,PROXIES
