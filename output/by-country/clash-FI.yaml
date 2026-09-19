@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - laolin
   type: vless
+  server: 212.104.128.68
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 02 - laolin
+  type: vless
   server: 212.104.128.27
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
@@ -15,10 +29,38 @@ proxies:
   servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 02 - laolin
+- name: 🇫🇮 FI 03 - laolin
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 029fc301-ac31-4aae-9fd8-5d0bff6ec5c0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGI
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 04 - laolin
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 029fc301-ac31-4aae-9fd8-5d0bff6ec5c0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 05 - laolin
   type: vless
   server: 212.104.128.106
   port: 443
@@ -32,14 +74,84 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 03 - laolin
+- name: 🇫🇮 FI 06 - laolin
   type: ss
   server: 82.47.186.18
   port: 19290
   cipher: aes-128-gcm
   password: o2rw2hICwu1blrr_gZAl2Q
   udp: true
-- name: 🇫🇮 FI 04 - laolin
+- name: 🇫🇮 FI 07 - laolin
+  type: vless
+  server: 212.104.128.68
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 08 - laolin
+  type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: 029fc301-ac31-4aae-9fd8-5d0bff6ec5c0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 09 - laolin
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 10 - laolin
+  type: vless
+  server: 212.104.128.244
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 11 - laolin
+  type: vless
+  server: 212.104.128.27
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
+- name: 🇫🇮 FI 12 - laolin
   type: vless
   server: 212.104.128.152
   port: 443
@@ -53,9 +165,9 @@ proxies:
     path: /
     headers:
       Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 05 - laolin
+- name: 🇫🇮 FI 13 - laolin
   type: vless
-  server: 212.104.128.152
+  server: 212.104.128.0
   port: 443
   uuid: b2593749-691c-428c-9481-14979cba3446
   udp: true
@@ -77,6 +189,14 @@ proxy-groups:
   - 🇫🇮 FI 03 - laolin
   - 🇫🇮 FI 04 - laolin
   - 🇫🇮 FI 05 - laolin
+  - 🇫🇮 FI 06 - laolin
+  - 🇫🇮 FI 07 - laolin
+  - 🇫🇮 FI 08 - laolin
+  - 🇫🇮 FI 09 - laolin
+  - 🇫🇮 FI 10 - laolin
+  - 🇫🇮 FI 11 - laolin
+  - 🇫🇮 FI 12 - laolin
+  - 🇫🇮 FI 13 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +207,13 @@ proxy-groups:
   - 🇫🇮 FI 03 - laolin
   - 🇫🇮 FI 04 - laolin
   - 🇫🇮 FI 05 - laolin
+  - 🇫🇮 FI 06 - laolin
+  - 🇫🇮 FI 07 - laolin
+  - 🇫🇮 FI 08 - laolin
+  - 🇫🇮 FI 09 - laolin
+  - 🇫🇮 FI 10 - laolin
+  - 🇫🇮 FI 11 - laolin
+  - 🇫🇮 FI 12 - laolin
+  - 🇫🇮 FI 13 - laolin
 rules:
 - MATCH,PROXIES
