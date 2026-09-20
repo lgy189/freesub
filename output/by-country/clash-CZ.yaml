@@ -15,10 +15,36 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - laolin
+  type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: 6795c884-7f09-4777-b779-76d0d6d6c0a1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 03 - laolin
+  type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: 8c016c41-1e60-457f-bbdf-e66729612079
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 04 - laolin
   type: vless
   server: 195.85.23.88
   port: 443
@@ -32,9 +58,22 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 03 - laolin
+- name: 🇨🇿 CZ 05 - laolin
   type: vless
-  server: 195.85.23.219
+  server: 162.159.39.218
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 06 - laolin
+  type: vless
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -43,10 +82,50 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 04 - laolin
+- name: 🇨🇿 CZ 07 - laolin
+  type: vless
+  server: cz1.zuoai.cf
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 08 - laolin
+  type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: 2bff0b26-c183-4240-8556-5b3f80bf69a2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 09 - laolin
+  type: vless
+  server: 151.101.1.194
+  port: 80
+  uuid: c19dcd53-1fed-4147-bdb6-b3d318c8d9f3
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: simorghfr.global.ssl.fastly.net
+- name: 🇨🇿 CZ 10 - laolin
   type: vless
   server: 195.85.23.252
   port: 443
@@ -60,7 +139,34 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 05 - laolin
+- name: 🇨🇿 CZ 11 - laolin
+  type: vless
+  server: 195.85.23.248
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 12 - laolin
+  type: vless
+  server: 162.159.43.187
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇨🇿 CZ 13 - laolin
   type: vless
   server: 195.85.23.252
   port: 443
@@ -74,6 +180,20 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 14 - laolin
+  type: vless
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +204,15 @@ proxy-groups:
   - 🇨🇿 CZ 03 - laolin
   - 🇨🇿 CZ 04 - laolin
   - 🇨🇿 CZ 05 - laolin
+  - 🇨🇿 CZ 06 - laolin
+  - 🇨🇿 CZ 07 - laolin
+  - 🇨🇿 CZ 08 - laolin
+  - 🇨🇿 CZ 09 - laolin
+  - 🇨🇿 CZ 10 - laolin
+  - 🇨🇿 CZ 11 - laolin
+  - 🇨🇿 CZ 12 - laolin
+  - 🇨🇿 CZ 13 - laolin
+  - 🇨🇿 CZ 14 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -94,5 +223,14 @@ proxy-groups:
   - 🇨🇿 CZ 03 - laolin
   - 🇨🇿 CZ 04 - laolin
   - 🇨🇿 CZ 05 - laolin
+  - 🇨🇿 CZ 06 - laolin
+  - 🇨🇿 CZ 07 - laolin
+  - 🇨🇿 CZ 08 - laolin
+  - 🇨🇿 CZ 09 - laolin
+  - 🇨🇿 CZ 10 - laolin
+  - 🇨🇿 CZ 11 - laolin
+  - 🇨🇿 CZ 12 - laolin
+  - 🇨🇿 CZ 13 - laolin
+  - 🇨🇿 CZ 14 - laolin
 rules:
 - MATCH,PROXIES
