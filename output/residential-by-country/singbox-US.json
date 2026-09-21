@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - laolin",
-        "🇮🇷 IR 02 - laolin",
-        "🇮🇷 IR 03 - laolin"
+        "🇺🇸 美国 (United States) 01 (家宽) - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - laolin",
-        "🇮🇷 IR 02 - laolin",
-        "🇮🇷 IR 03 - laolin"
+        "🇺🇸 美国 (United States) 01 (家宽) - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
