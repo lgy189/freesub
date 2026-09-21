@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - laolin
-  type: vless
-  server: 118.167.246.43
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - laolin
   type: vmess
   server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
@@ -26,27 +14,72 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  servername: ''
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - laolin
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - laolin
-  type: vless
-  server: 151.242.189.162
+  type: vmess
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
   port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: ''
   network: ws
   ws-opts:
-    path: /chat?ed=2560
+    path: ''
     headers:
-      Host: cdn8848.776676.xyz
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - laolin
+  type: vmess
+  server: dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - laolin
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - laolin
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - laolin
   type: vmess
   server: 165.154.195.38
   port: 35034
@@ -65,6 +98,9 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - laolin
   - 🇹🇼 中国台湾 (Taiwan) 03 - laolin
   - 🇹🇼 中国台湾 (Taiwan) 04 - laolin
+  - 🇹🇼 中国台湾 (Taiwan) 05 - laolin
+  - 🇹🇼 中国台湾 (Taiwan) 06 - laolin
+  - 🇹🇼 中国台湾 (Taiwan) 07 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +110,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - laolin
   - 🇹🇼 中国台湾 (Taiwan) 03 - laolin
   - 🇹🇼 中国台湾 (Taiwan) 04 - laolin
+  - 🇹🇼 中国台湾 (Taiwan) 05 - laolin
+  - 🇹🇼 中国台湾 (Taiwan) 06 - laolin
+  - 🇹🇼 中国台湾 (Taiwan) 07 - laolin
 rules:
 - MATCH,PROXIES
