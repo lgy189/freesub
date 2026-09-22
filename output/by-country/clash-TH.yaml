@@ -29,7 +29,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇹🇭 TH 03 - laolin
   type: vless
   server: 34.15.162.1
@@ -41,7 +41,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇹🇭 TH 04 - laolin
   type: vless
   server: 34.15.162.1
@@ -53,32 +53,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 TH 05 - laolin
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 TH 06 - laolin
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇭 TH 07 - laolin
+- name: 🇹🇭 TH 05 - laolin
   type: vless
   server: 103.86.49.57
   port: 80
@@ -91,7 +67,7 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 08 - laolin
+- name: 🇹🇭 TH 06 - laolin
   type: vless
   server: 34.15.162.1
   port: 443
@@ -102,20 +78,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇭 TH 09 - laolin
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇭 TH 10 - laolin
+  client-fingerprint: firefox
+- name: 🇹🇭 TH 07 - laolin
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -142,9 +106,6 @@ proxy-groups:
   - 🇹🇭 TH 05 - laolin
   - 🇹🇭 TH 06 - laolin
   - 🇹🇭 TH 07 - laolin
-  - 🇹🇭 TH 08 - laolin
-  - 🇹🇭 TH 09 - laolin
-  - 🇹🇭 TH 10 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -157,8 +118,5 @@ proxy-groups:
   - 🇹🇭 TH 05 - laolin
   - 🇹🇭 TH 06 - laolin
   - 🇹🇭 TH 07 - laolin
-  - 🇹🇭 TH 08 - laolin
-  - 🇹🇭 TH 09 - laolin
-  - 🇹🇭 TH 10 - laolin
 rules:
 - MATCH,PROXIES
