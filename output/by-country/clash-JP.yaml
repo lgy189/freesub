@@ -5,51 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - laolin
-  type: ss
-  server: 149.22.87.204
+  type: vless
+  server: 35.243.84.20
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
   udp: true
-- name: 🇯🇵 日本 (Japan) 02 - laolin
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 02 - laolin
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 03 - laolin
   type: vless
-  server: 172.67.217.240
+  server: 35.243.84.20
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 04 - laolin
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 05 - laolin
   type: vless
   server: 172.67.156.147
   port: 443
@@ -63,26 +56,46 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 05 - laolin
+  type: vless
+  server: 104.21.8.201
+  port: 2096
+  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-jp.skyvora.app
+  network: ws
+  ws-opts:
+    path: /vqyps6kf3
+    headers:
+      Host: cdn-jp.skyvora.app
 - name: 🇯🇵 日本 (Japan) 06 - laolin
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 07 - laolin
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 34.84.126.188
+  port: 443
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 - name: 🇯🇵 日本 (Japan) 08 - laolin
   type: vless
   server: 172.67.217.240
@@ -99,185 +112,6 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 09 - laolin
   type: vless
-  server: 104.21.33.59
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 10 - laolin
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 11 - laolin
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - laolin
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - laolin
-  type: vless
-  server: 35.243.84.20
-  port: 443
-  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14 - laolin
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 15 - laolin
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 16 - laolin
-  type: vless
-  server: 35.243.84.20
-  port: 443
-  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 17 - laolin
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 18 - laolin
-  type: vless
-  server: 107.191.53.84
-  port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mia10.pages.dev
-  network: ws
-  ws-opts:
-    path: /TG:@MiaChatChannel
-    headers:
-      Host: mia10.pages.dev
-- name: 🇯🇵 日本 (Japan) 19 - laolin
-  type: vless
-  server: 172.67.217.240
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - laolin
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 21 - laolin
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 22 - laolin
-  type: vless
-  server: 35.243.84.20
-  port: 443
-  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 23 - laolin
-  type: vless
   server: 104.21.8.201
   port: 2096
   uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
@@ -290,7 +124,7 @@ proxies:
     path: /vqyps6kf3
     headers:
       Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 24 - laolin
+- name: 🇯🇵 日本 (Japan) 10 - laolin
   type: vless
   server: 137.220.221.179
   port: 443
@@ -298,23 +132,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25 - laolin
+- name: 🇯🇵 日本 (Japan) 11 - laolin
   type: vless
-  server: 137.220.221.179
+  server: 35.243.84.20
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 26 - laolin
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 12 - laolin
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 13 - laolin
   type: vless
-  server: 137.220.221.179
+  server: 172.67.217.240
   port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 27 - laolin
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 14 - laolin
   type: vless
   server: 104.21.70.21
   port: 443
@@ -328,7 +179,153 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 28 - laolin
+- name: 🇯🇵 日本 (Japan) 15 - laolin
+  type: vless
+  server: 35.243.84.20
+  port: 443
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 16 - laolin
+  type: vless
+  server: 35.243.84.20
+  port: 443
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 17 - laolin
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - laolin
+  type: vless
+  server: 35.243.84.20
+  port: 443
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 19 - laolin
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - laolin
+  type: vless
+  server: 35.243.84.20
+  port: 443
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 21 - laolin
+  type: vless
+  server: 34.84.126.188
+  port: 443
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 22 - laolin
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 23 - laolin
+  type: vless
+  server: 34.84.126.188
+  port: 443
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 24 - laolin
+  type: vless
+  server: 172.67.130.159
+  port: 2096
+  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn-jp.skyvora.app
+  network: ws
+  ws-opts:
+    path: /vqyps6kf3
+    headers:
+      Host: cdn-jp.skyvora.app
+- name: 🇯🇵 日本 (Japan) 25 - laolin
+  type: vless
+  server: 34.84.126.188
+  port: 443
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 26 - laolin
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 27 - laolin
   type: vless
   server: 104.21.33.59
   port: 443
@@ -342,21 +339,87 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 28 - laolin
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
 - name: 🇯🇵 日本 (Japan) 29 - laolin
   type: vless
-  server: 45.63.124.130
+  server: 35.243.84.20
   port: 443
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: mia10.pages.dev
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 30 - laolin
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /TG:@MiaChatChannel
+    path: /tyxyws
     headers:
-      Host: mia10.pages.dev
-- name: 🇯🇵 日本 (Japan) 30 - laolin
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 31 - laolin
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 32 - laolin
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 33 - laolin
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 34 - laolin
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 35 - laolin
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 36 - laolin
   type: vless
   server: 172.67.156.147
   port: 443
@@ -370,18 +433,40 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 31 - laolin
+- name: 🇯🇵 日本 (Japan) 37 - laolin
   type: vless
-  server: 35.243.84.20
+  server: 34.84.126.188
   port: 443
-  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  uuid: 51a43b75-c84b-46eb-885e-c24e7819cd0b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+    public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 38 - laolin
+  type: vless
+  server: 104.21.33.59
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 39 - laolin
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -418,6 +503,14 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - laolin
   - 🇯🇵 日本 (Japan) 30 - laolin
   - 🇯🇵 日本 (Japan) 31 - laolin
+  - 🇯🇵 日本 (Japan) 32 - laolin
+  - 🇯🇵 日本 (Japan) 33 - laolin
+  - 🇯🇵 日本 (Japan) 34 - laolin
+  - 🇯🇵 日本 (Japan) 35 - laolin
+  - 🇯🇵 日本 (Japan) 36 - laolin
+  - 🇯🇵 日本 (Japan) 37 - laolin
+  - 🇯🇵 日本 (Japan) 38 - laolin
+  - 🇯🇵 日本 (Japan) 39 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -454,5 +547,13 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - laolin
   - 🇯🇵 日本 (Japan) 30 - laolin
   - 🇯🇵 日本 (Japan) 31 - laolin
+  - 🇯🇵 日本 (Japan) 32 - laolin
+  - 🇯🇵 日本 (Japan) 33 - laolin
+  - 🇯🇵 日本 (Japan) 34 - laolin
+  - 🇯🇵 日本 (Japan) 35 - laolin
+  - 🇯🇵 日本 (Japan) 36 - laolin
+  - 🇯🇵 日本 (Japan) 37 - laolin
+  - 🇯🇵 日本 (Japan) 38 - laolin
+  - 🇯🇵 日本 (Japan) 39 - laolin
 rules:
 - MATCH,PROXIES
