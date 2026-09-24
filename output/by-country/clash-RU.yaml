@@ -32,6 +32,13 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 03 - laolin
+  type: ss
+  server: 62.113.41.165
+  port: 888
+  cipher: chacha20-ietf-poly1305
+  password: hF-qqin2wYhP7zS47SyR0Q
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - laolin
   - 🇷🇺 俄罗斯 (Russia) 02 - laolin
+  - 🇷🇺 俄罗斯 (Russia) 03 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - laolin
   - 🇷🇺 俄罗斯 (Russia) 02 - laolin
+  - 🇷🇺 俄罗斯 (Russia) 03 - laolin
 rules:
 - MATCH,PROXIES
