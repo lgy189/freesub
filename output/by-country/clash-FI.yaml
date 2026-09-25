@@ -18,7 +18,31 @@ proxies:
   client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - laolin
   type: vless
-  server: 151.101.56.6
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 03 - laolin
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇫🇮 FI 04 - laolin
+  type: vless
+  server: k2.cloud--vpn.site
   port: 443
   uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
@@ -30,7 +54,7 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 03 - laolin
+- name: 🇫🇮 FI 05 - laolin
   type: vless
   server: 185.79.138.71
   port: 448
@@ -42,7 +66,43 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - laolin
+- name: 🇫🇮 FI 06 - laolin
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 07 - laolin
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 08 - laolin
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 09 - laolin
   type: vless
   server: 185.79.138.71
   port: 448
@@ -63,6 +123,11 @@ proxy-groups:
   - 🇫🇮 FI 02 - laolin
   - 🇫🇮 FI 03 - laolin
   - 🇫🇮 FI 04 - laolin
+  - 🇫🇮 FI 05 - laolin
+  - 🇫🇮 FI 06 - laolin
+  - 🇫🇮 FI 07 - laolin
+  - 🇫🇮 FI 08 - laolin
+  - 🇫🇮 FI 09 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,5 +137,10 @@ proxy-groups:
   - 🇫🇮 FI 02 - laolin
   - 🇫🇮 FI 03 - laolin
   - 🇫🇮 FI 04 - laolin
+  - 🇫🇮 FI 05 - laolin
+  - 🇫🇮 FI 06 - laolin
+  - 🇫🇮 FI 07 - laolin
+  - 🇫🇮 FI 08 - laolin
+  - 🇫🇮 FI 09 - laolin
 rules:
 - MATCH,PROXIES
