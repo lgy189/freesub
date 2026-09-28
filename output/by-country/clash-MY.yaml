@@ -5,6 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - laolin
+  type: vless
+  server: platform103.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.golnamakcert.top
+- name: 🇲🇾 MY 02 - laolin
+  type: vless
+  server: platform118.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇲🇾 MY 03 - laolin
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 04 - laolin
   type: vmess
   server: 47.250.135.244
   port: 10000
@@ -14,17 +53,197 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇲🇾 MY 05 - laolin
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 06 - laolin
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.golnamakcert.top
+- name: 🇲🇾 MY 07 - laolin
+  type: vmess
+  server: 47.250.135.244
+  port: 10000
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇲🇾 MY 08 - laolin
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.golnamakcert.top
+- name: 🇲🇾 MY 09 - laolin
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇲🇾 MY 10 - laolin
+  type: vless
+  server: platform117.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇲🇾 MY 11 - laolin
+  type: vless
+  server: platform128.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform128
+    headers:
+      Host: platform128.halalkhor.info
+- name: 🇲🇾 MY 12 - laolin
+  type: vless
+  server: platform107.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
+- name: 🇲🇾 MY 13 - laolin
+  type: vless
+  server: platform106.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇲🇾 MY 14 - laolin
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇲🇾 MY 15 - laolin
+  type: vless
+  server: platform108.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
+- name: 🇲🇾 MY 16 - laolin
+  type: vless
+  server: platform109.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: '%5B%27platform109.halalkhor.info%27%5D'
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 MY 01 - laolin
+  - 🇲🇾 MY 02 - laolin
+  - 🇲🇾 MY 03 - laolin
+  - 🇲🇾 MY 04 - laolin
+  - 🇲🇾 MY 05 - laolin
+  - 🇲🇾 MY 06 - laolin
+  - 🇲🇾 MY 07 - laolin
+  - 🇲🇾 MY 08 - laolin
+  - 🇲🇾 MY 09 - laolin
+  - 🇲🇾 MY 10 - laolin
+  - 🇲🇾 MY 11 - laolin
+  - 🇲🇾 MY 12 - laolin
+  - 🇲🇾 MY 13 - laolin
+  - 🇲🇾 MY 14 - laolin
+  - 🇲🇾 MY 15 - laolin
+  - 🇲🇾 MY 16 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 MY 01 - laolin
+  - 🇲🇾 MY 02 - laolin
+  - 🇲🇾 MY 03 - laolin
+  - 🇲🇾 MY 04 - laolin
+  - 🇲🇾 MY 05 - laolin
+  - 🇲🇾 MY 06 - laolin
+  - 🇲🇾 MY 07 - laolin
+  - 🇲🇾 MY 08 - laolin
+  - 🇲🇾 MY 09 - laolin
+  - 🇲🇾 MY 10 - laolin
+  - 🇲🇾 MY 11 - laolin
+  - 🇲🇾 MY 12 - laolin
+  - 🇲🇾 MY 13 - laolin
+  - 🇲🇾 MY 14 - laolin
+  - 🇲🇾 MY 15 - laolin
+  - 🇲🇾 MY 16 - laolin
 rules:
 - MATCH,PROXIES
