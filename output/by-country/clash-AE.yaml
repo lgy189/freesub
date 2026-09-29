@@ -6,16 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - laolin
   type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  server: 185.112.249.201
+  port: 2053
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - laolin
   type: vless
   server: 185.112.249.201
@@ -32,19 +34,6 @@ proxies:
       Host: edgetunnel-4uw.pages.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - laolin
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - laolin
-  type: vless
   server: 185.112.249.201
   port: 2053
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
@@ -57,23 +46,101 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - laolin
+- name: 🇦🇪 阿联酋 (UAE) 04 - laolin
   type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇦🇪 阿联酋 (UAE) 06 - laolin
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - laolin
   type: vless
   server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - laolin
+  type: vless
+  server: 185.112.249.201
+  port: 8443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇦🇪 阿联酋 (UAE) 07 - laolin
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - laolin
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - laolin
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - laolin
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 11 - laolin
+  type: vless
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -95,6 +162,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - laolin
   - 🇦🇪 阿联酋 (UAE) 05 - laolin
   - 🇦🇪 阿联酋 (UAE) 06 - laolin
+  - 🇦🇪 阿联酋 (UAE) 07 - laolin
+  - 🇦🇪 阿联酋 (UAE) 08 - laolin
+  - 🇦🇪 阿联酋 (UAE) 09 - laolin
+  - 🇦🇪 阿联酋 (UAE) 10 - laolin
+  - 🇦🇪 阿联酋 (UAE) 11 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,5 +178,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - laolin
   - 🇦🇪 阿联酋 (UAE) 05 - laolin
   - 🇦🇪 阿联酋 (UAE) 06 - laolin
+  - 🇦🇪 阿联酋 (UAE) 07 - laolin
+  - 🇦🇪 阿联酋 (UAE) 08 - laolin
+  - 🇦🇪 阿联酋 (UAE) 09 - laolin
+  - 🇦🇪 阿联酋 (UAE) 10 - laolin
+  - 🇦🇪 阿联酋 (UAE) 11 - laolin
 rules:
 - MATCH,PROXIES
