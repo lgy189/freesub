@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - laolin
+  type: vmess
+  server: 66.163.118.73
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mygptagent.org
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 02 - laolin
   type: vless
   server: 34.175.107.233
   port: 443
@@ -16,7 +32,31 @@ proxies:
     public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
   servername: www.cloudflare.com
   client-fingerprint: ios
-- name: 🇪🇸 西班牙 (Spain) 02 - laolin
+- name: 🇪🇸 西班牙 (Spain) 03 - laolin
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 04 - laolin
+  type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 05 - laolin
+  type: ss
+  server: 108.181.121.226
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 06 - laolin
   type: vmess
   server: mygptagent.org
   port: 443
@@ -32,67 +72,7 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 03 - laolin
-  type: vless
-  server: 34.175.107.233
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇪🇸 西班牙 (Spain) 04 - laolin
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - laolin
-  type: vless
-  server: 34.175.107.233
-  port: 443
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 06 - laolin
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 07 - laolin
-  type: vmess
-  server: 66.163.118.73
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 08 - laolin
   type: vless
   server: 34.175.107.233
   port: 443
@@ -103,7 +83,17 @@ proxies:
   reality-opts:
     public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
+- name: 🇪🇸 西班牙 (Spain) 08 - laolin
+  type: vmess
+  server: 66.163.118.73
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 09 - laolin
   type: vmess
   server: 66.163.118.73
@@ -116,23 +106,16 @@ proxies:
   skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 10 - laolin
   type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  server: 34.175.107.233
+  port: 443
+  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
+    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 11 - laolin
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -148,7 +131,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - laolin
   - 🇪🇸 西班牙 (Spain) 09 - laolin
   - 🇪🇸 西班牙 (Spain) 10 - laolin
-  - 🇪🇸 西班牙 (Spain) 11 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,6 +146,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - laolin
   - 🇪🇸 西班牙 (Spain) 09 - laolin
   - 🇪🇸 西班牙 (Spain) 10 - laolin
-  - 🇪🇸 西班牙 (Spain) 11 - laolin
 rules:
 - MATCH,PROXIES
