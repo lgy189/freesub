@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - laolin",
+        "🇰🇬 KG 02 - laolin",
+        "🇰🇬 KG 03 - laolin",
+        "🇰🇬 KG 04 - laolin",
+        "🇰🇬 KG 05 - laolin"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - laolin",
+        "🇰🇬 KG 02 - laolin",
+        "🇰🇬 KG 03 - laolin",
+        "🇰🇬 KG 04 - laolin",
+        "🇰🇬 KG 05 - laolin"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
