@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 - laolin",
-        "🇲🇽 MX 02 - laolin"
+        "🇧🇷 BR 01 - laolin",
+        "🇧🇷 BR 02 - laolin",
+        "🇧🇷 BR 03 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 - laolin",
-        "🇲🇽 MX 02 - laolin"
+        "🇧🇷 BR 01 - laolin",
+        "🇧🇷 BR 02 - laolin",
+        "🇧🇷 BR 03 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
