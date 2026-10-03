@@ -4,9 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 LV 01 - laolin
+- name: 🇸🇪 SE 01 - laolin
   type: vless
-  server: 85.159.228.223
+  server: 109.120.134.243
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
+- name: 🇸🇪 SE 02 - laolin
+  type: vless
+  server: 199.68.198.13
   port: 443
   uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
   udp: true
@@ -21,12 +35,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 LV 01 - laolin
+  - 🇸🇪 SE 01 - laolin
+  - 🇸🇪 SE 02 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 LV 01 - laolin
+  - 🇸🇪 SE 01 - laolin
+  - 🇸🇪 SE 02 - laolin
 rules:
 - MATCH,PROXIES
