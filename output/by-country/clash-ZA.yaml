@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: safari
 - name: 🇿🇦 ZA 02 - laolin
   type: ss
   server: 102.133.165.160
@@ -34,7 +34,7 @@ proxies:
   reality-opts:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: qq
 - name: 🇿🇦 ZA 04 - laolin
   type: ss
   server: 102.37.156.224
