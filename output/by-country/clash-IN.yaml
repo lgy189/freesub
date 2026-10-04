@@ -39,31 +39,6 @@ proxies:
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - laolin
-  type: vless
-  server: 108.162.198.178
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇮🇳 印度 (India) 05 - laolin
-  type: vless
-  server: 194.61.31.126
-  port: 2053
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -73,8 +48,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - laolin
   - 🇮🇳 印度 (India) 02 - laolin
   - 🇮🇳 印度 (India) 03 - laolin
-  - 🇮🇳 印度 (India) 04 - laolin
-  - 🇮🇳 印度 (India) 05 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -83,7 +56,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - laolin
   - 🇮🇳 印度 (India) 02 - laolin
   - 🇮🇳 印度 (India) 03 - laolin
-  - 🇮🇳 印度 (India) 04 - laolin
-  - 🇮🇳 印度 (India) 05 - laolin
 rules:
 - MATCH,PROXIES
