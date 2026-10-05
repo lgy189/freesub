@@ -12,42 +12,13 @@ proxies:
   password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
   udp: true
 - name: 🇫🇮 FI 02 - laolin
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  type: ss
+  server: 185.103.110.68
+  port: 18283
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: firefox
 - name: 🇫🇮 FI 03 - laolin
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 04 - laolin
-  type: vless
-  server: 95.216.27.15
-  port: 2053
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - laolin
   type: ss
   server: 185.103.110.68
   port: 18283
@@ -62,8 +33,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - laolin
   - 🇫🇮 FI 02 - laolin
   - 🇫🇮 FI 03 - laolin
-  - 🇫🇮 FI 04 - laolin
-  - 🇫🇮 FI 05 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,7 +41,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - laolin
   - 🇫🇮 FI 02 - laolin
   - 🇫🇮 FI 03 - laolin
-  - 🇫🇮 FI 04 - laolin
-  - 🇫🇮 FI 05 - laolin
 rules:
 - MATCH,PROXIES
