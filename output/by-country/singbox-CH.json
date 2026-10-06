@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 CH 01 - laolin"
+        "🇨🇭 CH 01 - laolin",
+        "🇨🇭 CH 02 - laolin",
+        "🇨🇭 CH 03 - laolin",
+        "🇨🇭 CH 04 - laolin",
+        "🇨🇭 CH 05 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 CH 01 - laolin"
+        "🇨🇭 CH 01 - laolin",
+        "🇨🇭 CH 02 - laolin",
+        "🇨🇭 CH 03 - laolin",
+        "🇨🇭 CH 04 - laolin",
+        "🇨🇭 CH 05 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
