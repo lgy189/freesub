@@ -6,72 +6,10 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - laolin
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - laolin
-  type: vless
-  server: 104.18.34.21
-  port: 8443
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: socks5.revil-time3.workers.dev
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - laolin
-  type: vless
-  server: 172.65.90.52
-  port: 8880
-  uuid: 30e4c878-15ca-4f53-ab32-04c60ecd3f31
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: blue-rice-7142.30-346.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04 - laolin
-  type: vless
-  server: 8.6.112.242
-  port: 443
-  uuid: 64726966-0000-4000-8000-740000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
-  network: ws
-  ws-opts:
-    path: /drift?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 05 - laolin
-  type: ss
-  server: 46.17.41.166
-  port: 50660
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - laolin
-  type: ss
   server: 46.17.45.31
   port: 50660
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - laolin
-  type: ss
-  server: 194.87.68.140
-  port: 50660
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -79,23 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 02 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 03 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 04 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 05 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 06 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 07 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 02 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 03 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 04 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 05 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 06 - laolin
-  - 🇷🇺 俄罗斯 (Russia) 07 - laolin
 rules:
 - MATCH,PROXIES
