@@ -6,71 +6,12 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - laolin
   type: ss
-  server: 57.129.113.16
+  server: 51.195.126.38
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
+  password: 2YdE4lFOid5a
   udp: true
 - name: 🇩🇪 德国 (Germany) 02 - laolin
-  type: vless
-  server: 141.98.7.193
-  port: 2053
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 03 - laolin
-  type: vless
-  server: 141.98.7.193
-  port: 2053
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 04 - laolin
-  type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 05 - laolin
-  type: vless
-  server: 141.98.7.193
-  port: 2083
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 06 - laolin
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 07 - laolin
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - laolin
-  type: vless
-  server: 141.98.7.193
-  port: 2087
-  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 09 - laolin
   type: vless
   server: 94.143.231.146
   port: 443
@@ -84,28 +25,37 @@ proxies:
     path: /merky-connect/de6/
     headers:
       Host: sub.merky.top
-- name: 🇩🇪 德国 (Germany) 10 - laolin
+- name: 🇩🇪 德国 (Germany) 03 - laolin
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 04 - laolin
   type: ss
   server: 209.46.102.22
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
   udp: true
-- name: 🇩🇪 德国 (Germany) 11 - laolin
+- name: 🇩🇪 德国 (Germany) 05 - laolin
   type: ss
-  server: 51.195.126.38
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 12 - laolin
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 (Germany) 06 - laolin
+  type: vless
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
   udp: true
-- name: 🇩🇪 德国 (Germany) 13 - laolin
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 07 - laolin
   type: vless
   server: 141.98.7.193
   port: 2083
@@ -114,64 +64,69 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 14 - laolin
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 15 - laolin
-  type: vless
-  server: 157.230.101.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 16 - laolin
+- name: 🇩🇪 德国 (Germany) 08 - laolin
   type: vless
   server: 141.98.7.193
-  port: 2087
+  port: 8443
   uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
   udp: true
   tls: true
   skip-cert-verify: true
   servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 17 - laolin
+  network: ws
+  ws-opts:
+    path: /ws-cdn1-vless
+    headers:
+      Host: de.fastmirror-labs.xyz
+- name: 🇩🇪 德国 (Germany) 09 - laolin
   type: vless
-  server: 91.107.180.141
-  port: 443
-  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: marz.zovip2.ir
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: marz.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 18 - laolin
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 10 - laolin
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 11 - laolin
+  type: vless
+  server: 141.98.7.193
+  port: 2083
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 12 - laolin
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 13 - laolin
+  type: vless
+  server: 141.98.7.193
+  port: 8443
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
   network: ws
   ws-opts:
-    path: /vless/
+    path: /ws-cdn1-vless
     headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 19 - laolin
+      Host: de.fastmirror-labs.xyz
+- name: 🇩🇪 德国 (Germany) 14 - laolin
   type: vless
   server: 65.109.188.155
   port: 443
@@ -185,7 +140,7 @@ proxies:
     path: /gropcdn
     headers:
       Host: marz.zovip2.ir
-- name: 🇩🇪 德国 (Germany) 20 - laolin
+- name: 🇩🇪 德国 (Germany) 15 - laolin
   type: vless
   server: 141.98.7.193
   port: 2087
@@ -194,16 +149,30 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 21 - laolin
+- name: 🇩🇪 德国 (Germany) 16 - laolin
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 17 - laolin
+  type: ss
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - laolin
   type: vless
   server: 141.98.7.193
-  port: 2053
+  port: 2087
   uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
   udp: true
   tls: true
   skip-cert-verify: true
   servername: 141.98.7.193
-- name: 🇩🇪 德国 (Germany) 22 - laolin
+- name: 🇩🇪 德国 (Germany) 19 - laolin
   type: vless
   server: 91.107.247.173
   port: 2083
@@ -217,7 +186,74 @@ proxies:
     path: /
     headers:
       Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 20 - laolin
+  type: vless
+  server: 157.230.101.36
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 21 - laolin
+  type: vless
+  server: 141.98.7.193
+  port: 2053
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 22 - laolin
+  type: vless
+  server: 5.78.83.177
+  port: 443
+  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: marz.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: marz.zovip2.ir
 - name: 🇩🇪 德国 (Germany) 23 - laolin
+  type: vless
+  server: 91.107.180.141
+  port: 443
+  uuid: a95c18d0-1b39-4bc7-8521-b62b5ab3f3f7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: marz.zovip2.ir
+  network: ws
+  ws-opts:
+    path: /gropcdn
+    headers:
+      Host: marz.zovip2.ir
+- name: 🇩🇪 德国 (Germany) 24 - laolin
+  type: vless
+  server: 141.98.7.193
+  port: 2087
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 141.98.7.193
+- name: 🇩🇪 德国 (Germany) 25 - laolin
+  type: ss
+  server: 31.76.11.83
+  port: 42800
+  cipher: chacha20-ietf-poly1305
+  password: adzpq0ltVHdCxO2lsW5N9C8H5B9hXnD7YyXZfP5aulw=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 26 - laolin
   type: vless
   server: 31.76.11.83
   port: 22849
@@ -253,6 +289,9 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - laolin
   - 🇩🇪 德国 (Germany) 22 - laolin
   - 🇩🇪 德国 (Germany) 23 - laolin
+  - 🇩🇪 德国 (Germany) 24 - laolin
+  - 🇩🇪 德国 (Germany) 25 - laolin
+  - 🇩🇪 德国 (Germany) 26 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -281,5 +320,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 21 - laolin
   - 🇩🇪 德国 (Germany) 22 - laolin
   - 🇩🇪 德国 (Germany) 23 - laolin
+  - 🇩🇪 德国 (Germany) 24 - laolin
+  - 🇩🇪 德国 (Germany) 25 - laolin
+  - 🇩🇪 德国 (Germany) 26 - laolin
 rules:
 - MATCH,PROXIES
