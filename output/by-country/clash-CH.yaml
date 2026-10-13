@@ -5,26 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - laolin
+  type: vless
+  server: 185.18.250.245
+  port: 443
+  uuid: f77299ea-e13d-417d-8cdc-ce5566dfc94b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: edu.ruangguru.com.r3xxe.eu.cc
+  network: ws
+  ws-opts:
+    path: /nl-tw
+    headers:
+      Host: edu.ruangguru.com.r3xxe.eu.cc
+- name: 🇨🇭 CH 02 - laolin
   type: ss
   server: 132.243.175.144
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 02 - laolin
+- name: 🇨🇭 CH 03 - laolin
   type: vless
-  server: 147.45.42.73
-  port: 20443
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
+  server: 128.241.25.11
+  port: 30021
+  uuid: 72fbb611-628d-4afa-8198-bda3e38021f9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - laolin
   - 🇨🇭 CH 02 - laolin
+  - 🇨🇭 CH 03 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -39,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - laolin
   - 🇨🇭 CH 02 - laolin
+  - 🇨🇭 CH 03 - laolin
 rules:
 - MATCH,PROXIES
