@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇨🇭 CH 01 - laolin",
+        "🇨🇭 CH 02 - laolin",
+        "🇨🇭 CH 03 - laolin",
+        "🇨🇭 CH 04 - laolin",
+        "🇨🇭 CH 05 - laolin",
+        "🇨🇭 CH 06 - laolin",
+        "🇨🇭 CH 07 - laolin",
+        "🇨🇭 CH 08 - laolin",
+        "🇨🇭 CH 09 - laolin",
+        "🇨🇭 CH 10 - laolin",
+        "🇨🇭 CH 11 - laolin"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇨🇭 CH 01 - laolin",
+        "🇨🇭 CH 02 - laolin",
+        "🇨🇭 CH 03 - laolin",
+        "🇨🇭 CH 04 - laolin",
+        "🇨🇭 CH 05 - laolin",
+        "🇨🇭 CH 06 - laolin",
+        "🇨🇭 CH 07 - laolin",
+        "🇨🇭 CH 08 - laolin",
+        "🇨🇭 CH 09 - laolin",
+        "🇨🇭 CH 10 - laolin",
+        "🇨🇭 CH 11 - laolin"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
