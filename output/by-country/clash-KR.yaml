@@ -6,20 +6,20 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - laolin
   type: vmess
-  server: jp4.998998.best
+  server: seoul02.zgjok.com
   port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nat12.9966338.xyz
+  servername: seoul02.zgjok.com
   network: ws
   ws-opts:
-    path: /vvvvvvvvv
+    path: /
     headers:
-      Host: nat12.9966338.xyz
+      Host: seoul02.zgjok.com
 - name: 🇰🇷 韩国 (South Korea) 02 - laolin
   type: vmess
   server: 132.145.80.230
@@ -34,13 +34,13 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: ''
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 03 - laolin
   type: ss
   server: 141.164.45.187
-  port: 9090
+  port: 6697
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: TEzjfAYq2IjtuoS
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 04 - laolin
   type: vmess
@@ -59,22 +59,28 @@ proxies:
     headers:
       Host: seoul02.zgjok.com
 - name: 🇰🇷 韩国 (South Korea) 05 - laolin
+  type: ss
+  server: 141.164.45.187
+  port: 2376
+  cipher: aes-256-gcm
+  password: faBAoD54k87UJG7
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 06 - laolin
   type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
+  server: 183.109.131.75
+  port: 20086
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: seoul02.zgjok.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: seoul02.zgjok.com
-- name: 🇰🇷 韩国 (South Korea) 06 - laolin
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 07 - laolin
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -86,7 +92,7 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 07 - laolin
+- name: 🇰🇷 韩国 (South Korea) 08 - laolin
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -96,7 +102,35 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - laolin
+- name: 🇰🇷 韩国 (South Korea) 09 - laolin
+  type: vmess
+  server: jp4.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nat12.9966338.xyz
+  network: ws
+  ws-opts:
+    path: /vvvvvvvvv
+    headers:
+      Host: nat12.9966338.xyz
+- name: 🇰🇷 韩国 (South Korea) 10 - laolin
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 11 - laolin
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -110,19 +144,14 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 09 - laolin
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 12 - laolin
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,6 +166,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - laolin
   - 🇰🇷 韩国 (South Korea) 08 - laolin
   - 🇰🇷 韩国 (South Korea) 09 - laolin
+  - 🇰🇷 韩国 (South Korea) 10 - laolin
+  - 🇰🇷 韩国 (South Korea) 11 - laolin
+  - 🇰🇷 韩国 (South Korea) 12 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,5 +183,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - laolin
   - 🇰🇷 韩国 (South Korea) 08 - laolin
   - 🇰🇷 韩国 (South Korea) 09 - laolin
+  - 🇰🇷 韩国 (South Korea) 10 - laolin
+  - 🇰🇷 韩国 (South Korea) 11 - laolin
+  - 🇰🇷 韩国 (South Korea) 12 - laolin
 rules:
 - MATCH,PROXIES
