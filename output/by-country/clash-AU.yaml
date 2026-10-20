@@ -15,21 +15,19 @@ proxies:
   reality-opts:
     public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 02 - laolin
   type: vless
-  server: 104.18.155.229
-  port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  server: 212.81.47.99
+  port: 51106
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
-  network: ws
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+  reality-opts:
+    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
+  servername: apple.com
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - laolin
   type: vless
   server: 212.81.47.99
@@ -42,30 +40,6 @@ proxies:
     public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - laolin
-  type: vless
-  server: 212.81.47.99
-  port: 51106
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 05 - laolin
-  type: vless
-  server: 212.81.47.99
-  port: 51106
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
-  servername: apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,8 +48,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - laolin
   - 🇦🇺 澳大利亚 (Australia) 02 - laolin
   - 🇦🇺 澳大利亚 (Australia) 03 - laolin
-  - 🇦🇺 澳大利亚 (Australia) 04 - laolin
-  - 🇦🇺 澳大利亚 (Australia) 05 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -84,7 +56,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - laolin
   - 🇦🇺 澳大利亚 (Australia) 02 - laolin
   - 🇦🇺 澳大利亚 (Australia) 03 - laolin
-  - 🇦🇺 澳大利亚 (Australia) 04 - laolin
-  - 🇦🇺 澳大利亚 (Australia) 05 - laolin
 rules:
 - MATCH,PROXIES
