@@ -5,6 +5,48 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 AT 01 - laolin
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MTMVPN--MTMVPN--MTMVPN--MTMVPN?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇹 AT 02 - laolin
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?Telegram---mehrosaboranfp=chrome
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇹 AT 03 - laolin
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: ?B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub?ed=2048
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇹 AT 04 - laolin
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -17,11 +59,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇹 AT 01 - laolin
+  - 🇦🇹 AT 02 - laolin
+  - 🇦🇹 AT 03 - laolin
+  - 🇦🇹 AT 04 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 AT 01 - laolin
+  - 🇦🇹 AT 02 - laolin
+  - 🇦🇹 AT 03 - laolin
+  - 🇦🇹 AT 04 - laolin
 rules:
 - MATCH,PROXIES

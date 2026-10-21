@@ -6,27 +6,12 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - laolin
   type: ss
-  server: 202.50.253.36
-  port: 19999
+  server: 57.131.48.45
+  port: 8388
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: itzvpn@321
   udp: true
 - name: 🇮🇹 意大利 (Italy) 02 - laolin
-  type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 03 - laolin
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 04 - laolin
   type: vless
   server: 57.131.38.163
   port: 2053
@@ -38,49 +23,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 05 - laolin
-  type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 06 - laolin
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 07 - laolin
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 08 - laolin
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 09 - laolin
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 10 - laolin
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 11 - laolin
+- name: 🇮🇹 意大利 (Italy) 03 - laolin
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -88,26 +31,33 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 12 - laolin
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 13 - laolin
+- name: 🇮🇹 意大利 (Italy) 04 - laolin
   type: ss
   server: 202.50.253.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 (Italy) 14 - laolin
+- name: 🇮🇹 意大利 (Italy) 05 - laolin
   type: ss
-  server: 202.50.253.72
+  server: 202.50.253.99
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 06 - laolin
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 (Italy) 07 - laolin
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -121,13 +71,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - laolin
   - 🇮🇹 意大利 (Italy) 06 - laolin
   - 🇮🇹 意大利 (Italy) 07 - laolin
-  - 🇮🇹 意大利 (Italy) 08 - laolin
-  - 🇮🇹 意大利 (Italy) 09 - laolin
-  - 🇮🇹 意大利 (Italy) 10 - laolin
-  - 🇮🇹 意大利 (Italy) 11 - laolin
-  - 🇮🇹 意大利 (Italy) 12 - laolin
-  - 🇮🇹 意大利 (Italy) 13 - laolin
-  - 🇮🇹 意大利 (Italy) 14 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -140,12 +83,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05 - laolin
   - 🇮🇹 意大利 (Italy) 06 - laolin
   - 🇮🇹 意大利 (Italy) 07 - laolin
-  - 🇮🇹 意大利 (Italy) 08 - laolin
-  - 🇮🇹 意大利 (Italy) 09 - laolin
-  - 🇮🇹 意大利 (Italy) 10 - laolin
-  - 🇮🇹 意大利 (Italy) 11 - laolin
-  - 🇮🇹 意大利 (Italy) 12 - laolin
-  - 🇮🇹 意大利 (Italy) 13 - laolin
-  - 🇮🇹 意大利 (Italy) 14 - laolin
 rules:
 - MATCH,PROXIES
