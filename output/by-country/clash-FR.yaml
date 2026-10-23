@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - laolin
-  type: vless
-  server: fr2.downbala.com
-  port: 443
-  uuid: 1252717c-393b-4ab7-96f7-7f49cf77e9e3
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: t0.m.awsstatic.com
   network: ws
   ws-opts:
-    path: /timer/?ed=2560
+    path: /
     headers:
-      Host: fr2.downbala.com
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇫🇷 法国 (France) 02 - laolin
   type: vmess
   server: 57.128.164.21
@@ -34,17 +35,6 @@ proxies:
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
 - name: 🇫🇷 法国 (France) 03 - laolin
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 04 - laolin
   type: vless
   server: 51.77.217.70
   port: 2053
@@ -56,7 +46,29 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 04 - laolin
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 05 - laolin
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 06 - laolin
   type: vmess
   server: 145.239.55.210
   port: 80
@@ -71,28 +83,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 06 - laolin
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 07 - laolin
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,7 +94,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - laolin
   - 🇫🇷 法国 (France) 05 - laolin
   - 🇫🇷 法国 (France) 06 - laolin
-  - 🇫🇷 法国 (France) 07 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -116,6 +105,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - laolin
   - 🇫🇷 法国 (France) 05 - laolin
   - 🇫🇷 法国 (France) 06 - laolin
-  - 🇫🇷 法国 (France) 07 - laolin
 rules:
 - MATCH,PROXIES
