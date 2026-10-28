@@ -6,16 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 AZ 01 - laolin",
-        "🇦🇿 AZ 02 - laolin"
+        "🇦🇺 澳大利亚 (Australia) 01 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 AZ 01 - laolin",
-        "🇦🇿 AZ 02 - laolin"
+        "🇦🇺 澳大利亚 (Australia) 01 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
