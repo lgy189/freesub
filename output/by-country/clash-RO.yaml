@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - laolin
   type: vless
-  server: 178.83.45.226
+  server: 155.117.5.208
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
@@ -14,28 +14,19 @@ proxies:
   skip-cert-verify: true
 - name: 🇷🇴 RO 02 - laolin
   type: vless
-  server: edge10.cyrionflare.com
+  server: 178.83.45.226
   port: 2052
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇷🇴 RO 03 - laolin
-  type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇷🇴 RO 04 - laolin
-  type: vless
-  server: 155.117.5.208
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +35,6 @@ proxy-groups:
   - 🇷🇴 RO 01 - laolin
   - 🇷🇴 RO 02 - laolin
   - 🇷🇴 RO 03 - laolin
-  - 🇷🇴 RO 04 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,6 +43,5 @@ proxy-groups:
   - 🇷🇴 RO 01 - laolin
   - 🇷🇴 RO 02 - laolin
   - 🇷🇴 RO 03 - laolin
-  - 🇷🇴 RO 04 - laolin
 rules:
 - MATCH,PROXIES
