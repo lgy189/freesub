@@ -6,36 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - laolin
   type: vless
-  server: sg2-xr.zgrelay.com
-  port: 443
-  uuid: e221699d-e705-4664-9162-a75a82aa3997
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sg2-xr.zgrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl-kr3
-    headers:
-      Host: sg2-xr.zgrelay.com
-- name: 🇰🇷 韩国 (South Korea) 02 - laolin
-  type: vmess
-  server: nickgus.cc.cd
-  port: 443
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /photos
-    headers:
-      Host: ''
-- name: 🇰🇷 韩国 (South Korea) 03 - laolin
-  type: vless
   server: 152.69.226.63
   port: 25555
   uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
@@ -47,16 +17,44 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 04 - laolin
-  type: vmess
-  server: 140.238.2.250
+- name: 🇰🇷 韩国 (South Korea) 02 - laolin
+  type: vless
+  server: 172.64.159.157
   port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+  network: ws
+  ws-opts:
+    path: /photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 03 - laolin
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - laolin
+  type: vless
+  server: 172.64.155.111
+  port: 443
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+  network: ws
+  ws-opts:
+    path: /thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
 - name: 🇰🇷 韩国 (South Korea) 05 - laolin
   type: vless
   server: 151.245.106.49
@@ -68,21 +66,14 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 06 - laolin
-  type: vless
-  server: 172.64.158.47
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /site/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
 - name: 🇰🇷 韩国 (South Korea) 07 - laolin
   type: vmess
   server: 129.154.61.196
@@ -97,7 +88,7 @@ proxies:
   type: vless
   server: sg2-xr.zgrelay.com
   port: 443
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  uuid: e221699d-e705-4664-9162-a75a82aa3997
   udp: true
   tls: true
   skip-cert-verify: true
@@ -109,73 +100,27 @@ proxies:
       Host: sg2-xr.zgrelay.com
 - name: 🇰🇷 韩国 (South Korea) 09 - laolin
   type: vless
-  server: 172.64.155.111
+  server: 104.18.45.184
   port: 443
   uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
   network: ws
   ws-opts:
-    path: /thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    path: /ranking/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
     headers:
-      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
 - name: 🇰🇷 韩国 (South Korea) 10 - laolin
-  type: vless
-  server: 104.18.37.0
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
 - name: 🇰🇷 韩国 (South Korea) 11 - laolin
   type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 12 - laolin
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 13 - laolin
-  type: vless
-  server: 172.64.159.157
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 14 - laolin
-  type: vless
   server: 172.64.155.111
   port: 443
   uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
@@ -188,21 +133,35 @@ proxies:
     path: /thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
     headers:
       Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 15 - laolin
+- name: 🇰🇷 韩国 (South Korea) 12 - laolin
   type: vless
-  server: 172.64.159.157
+  server: sg2-xr.zgrelay.com
   port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  uuid: e221699d-e705-4664-9162-a75a82aa3997
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+  servername: sg2-xr.zgrelay.com
   network: ws
   ws-opts:
-    path: /photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    path: /700gvl-kr3
     headers:
-      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 16 - laolin
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 13 - laolin
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 14 - laolin
   type: vless
   server: 172.64.158.47
   port: 443
@@ -216,6 +175,30 @@ proxies:
     path: /site/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
     headers:
       Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 15 - laolin
+  type: vless
+  server: 104.18.37.0
+  port: 443
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
+  network: ws
+  ws-opts:
+    path: /tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 16 - laolin
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 17 - laolin
   type: vless
   server: 151.245.106.49
@@ -230,18 +213,16 @@ proxies:
   client-fingerprint: random
 - name: 🇰🇷 韩国 (South Korea) 18 - laolin
   type: vless
-  server: 104.18.37.0
-  port: 443
-  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
-  network: ws
-  ws-opts:
-    path: /tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
-    headers:
-      Host: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 19 - laolin
   type: vless
   server: sg2-xr.zgrelay.com
@@ -279,13 +260,47 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nickgus.cc.cd
+  servername: ''
   network: ws
   ws-opts:
     path: /photos
     headers:
-      Host: nickgus.cc.cd
+      Host: ''
 - name: 🇰🇷 韩国 (South Korea) 22 - laolin
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 23 - laolin
+  type: vless
+  server: 104.18.37.0
+  port: 443
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
+  network: ws
+  ws-opts:
+    path: /tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 24 - laolin
+  type: ss
+  server: 13.124.223.116
+  port: 8443
+  cipher: chacha20-ietf-poly1305
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 25 - laolin
   type: vless
   server: 104.18.45.184
   port: 443
@@ -299,7 +314,21 @@ proxies:
     path: /ranking/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
     headers:
       Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 23 - laolin
+- name: 🇰🇷 韩国 (South Korea) 26 - laolin
+  type: vless
+  server: 172.64.158.47
+  port: 443
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+  network: ws
+  ws-opts:
+    path: /site/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 27 - laolin
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -310,7 +339,45 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 28 - laolin
+  type: vless
+  server: sg2-xr.zgrelay.com
+  port: 443
+  uuid: E221699D-E705-4664-9162-A75A82AA3997
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sg2-xr.zgrelay.com
+  network: ws
+  ws-opts:
+    path: /700gvl-kr3
+    headers:
+      Host: sg2-xr.zgrelay.com
+- name: 🇰🇷 韩国 (South Korea) 29 - laolin
+  type: vmess
+  server: 129.154.61.196
+  port: 800
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 30 - laolin
+  type: vless
+  server: 172.64.159.157
+  port: 443
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+  network: ws
+  ws-opts:
+    path: /photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -339,6 +406,13 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 21 - laolin
   - 🇰🇷 韩国 (South Korea) 22 - laolin
   - 🇰🇷 韩国 (South Korea) 23 - laolin
+  - 🇰🇷 韩国 (South Korea) 24 - laolin
+  - 🇰🇷 韩国 (South Korea) 25 - laolin
+  - 🇰🇷 韩国 (South Korea) 26 - laolin
+  - 🇰🇷 韩国 (South Korea) 27 - laolin
+  - 🇰🇷 韩国 (South Korea) 28 - laolin
+  - 🇰🇷 韩国 (South Korea) 29 - laolin
+  - 🇰🇷 韩国 (South Korea) 30 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -367,5 +441,12 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 21 - laolin
   - 🇰🇷 韩国 (South Korea) 22 - laolin
   - 🇰🇷 韩国 (South Korea) 23 - laolin
+  - 🇰🇷 韩国 (South Korea) 24 - laolin
+  - 🇰🇷 韩国 (South Korea) 25 - laolin
+  - 🇰🇷 韩国 (South Korea) 26 - laolin
+  - 🇰🇷 韩国 (South Korea) 27 - laolin
+  - 🇰🇷 韩国 (South Korea) 28 - laolin
+  - 🇰🇷 韩国 (South Korea) 29 - laolin
+  - 🇰🇷 韩国 (South Korea) 30 - laolin
 rules:
 - MATCH,PROXIES
