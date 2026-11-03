@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - laolin",
-        "🇱🇰 LK 02 - laolin",
-        "🇱🇰 LK 03 - laolin",
-        "🇱🇰 LK 04 - laolin",
-        "🇱🇰 LK 05 - laolin"
+        "🇨🇴 CO 01 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - laolin",
-        "🇱🇰 LK 02 - laolin",
-        "🇱🇰 LK 03 - laolin",
-        "🇱🇰 LK 04 - laolin",
-        "🇱🇰 LK 05 - laolin"
+        "🇨🇴 CO 01 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
