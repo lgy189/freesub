@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - laolin
   type: vless
-  server: 172.64.190.13
+  server: 104.17.50.227
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 02 - laolin
   type: vless
-  server: 162.159.254.3
+  server: 104.16.10.104
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -34,49 +34,49 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - laolin
   type: vless
-  server: www.speedtest.net
+  server: 104.21.70.228
   port: 443
-  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wallweb4.pages.dev
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /tyxyws
     headers:
-      Host: wallweb4.pages.dev
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 04 - laolin
   type: vless
-  server: 104.18.42.98
+  server: 172.66.47.178
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 0d5a2112-789f-4755-88e6-61a1a8f8067b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: 14F7F5f0.mRBL69BlaCK.paGES.DeV
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /I0IHonn0TGa2xaOO?ed=2560
     headers:
-      Host: jp3.yohototo.top
+      Host: 14f7f5F0.MRBL69bLaCk.PagEs.dev
 - name: 🌐 其他地区 (Other) 05 - laolin
   type: vless
-  server: 172.67.156.147
+  server: 172.67.149.199
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: px2.5ibtc.cn
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
     headers:
-      Host: jp3.yohototo.top
+      Host: px2.5ibtc.cn
 - name: 🌐 其他地区 (Other) 06 - laolin
   type: vless
-  server: 104.21.0.87
+  server: 172.67.217.240
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -90,7 +90,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 07 - laolin
   type: vless
-  server: 162.159.254.3
+  server: 104.16.10.2
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -104,7 +104,7 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 08 - laolin
   type: vless
-  server: 104.21.70.21
+  server: 104.16.10.135
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -118,18 +118,314 @@ proxies:
       Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 09 - laolin
   type: vless
-  server: 190.93.244.166
-  port: 2096
-  uuid: b2853d19-fada-44dc-8d44-967d1af122e0
+  server: 104.21.6.186
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: wQa3mioJJR8fYoZhIui--su3-UCG1GDx.pages.DEv
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiWmFzVk5rd2siLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
+    path: /tyxyws
     headers:
-      Host: wqa3miojjr8fyozhiui--su3-ucg1gdx.pages.dev
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 10 - laolin
+  type: vless
+  server: 104.18.42.98
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 11 - laolin
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 12 - laolin
+  type: vless
+  server: 104.21.0.87
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 13 - laolin
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 14 - laolin
+  type: vless
+  server: 104.16.10.10
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🌐 其他地区 (Other) 15 - laolin
+  type: vless
+  server: 104.19.178.244
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🌐 其他地区 (Other) 16 - laolin
+  type: vless
+  server: 104.18.40.171
+  port: 443
+  uuid: cced2d3b-9840-4579-a6b3-5de365f3bf50
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb6.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb6.pages.dev
+- name: 🌐 其他地区 (Other) 17 - laolin
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 18 - laolin
+  type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 19 - laolin
+  type: vmess
+  server: 188.114.96.3
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray1.dozapp.xyz
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 20 - laolin
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 21 - laolin
+  type: vless
+  server: 104.21.219.160
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 22 - laolin
+  type: vless
+  server: 104.27.46.35
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 23 - laolin
+  type: vless
+  server: 104.16.111.102
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 24 - laolin
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 25 - laolin
+  type: vless
+  server: 104.21.219.160
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 26 - laolin
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 27 - laolin
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 28 - laolin
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 29 - laolin
+  type: vless
+  server: 172.66.44.78
+  port: 443
+  uuid: 0d5a2112-789f-4755-88e6-61a1a8f8067b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 14F7F5f0.mRBL69BlaCK.paGES.DeV
+  network: ws
+  ws-opts:
+    path: /I0IHonn0TGa2xaOO?ed=2560
+    headers:
+      Host: 14f7f5F0.MRBL69bLaCk.PagEs.dev
+- name: 🌐 其他地区 (Other) 30 - laolin
+  type: vless
+  server: 104.16.10.235
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: u.srilankangrill.online
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +440,27 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - laolin
   - 🌐 其他地区 (Other) 08 - laolin
   - 🌐 其他地区 (Other) 09 - laolin
+  - 🌐 其他地区 (Other) 10 - laolin
+  - 🌐 其他地区 (Other) 11 - laolin
+  - 🌐 其他地区 (Other) 12 - laolin
+  - 🌐 其他地区 (Other) 13 - laolin
+  - 🌐 其他地区 (Other) 14 - laolin
+  - 🌐 其他地区 (Other) 15 - laolin
+  - 🌐 其他地区 (Other) 16 - laolin
+  - 🌐 其他地区 (Other) 17 - laolin
+  - 🌐 其他地区 (Other) 18 - laolin
+  - 🌐 其他地区 (Other) 19 - laolin
+  - 🌐 其他地区 (Other) 20 - laolin
+  - 🌐 其他地区 (Other) 21 - laolin
+  - 🌐 其他地区 (Other) 22 - laolin
+  - 🌐 其他地区 (Other) 23 - laolin
+  - 🌐 其他地区 (Other) 24 - laolin
+  - 🌐 其他地区 (Other) 25 - laolin
+  - 🌐 其他地区 (Other) 26 - laolin
+  - 🌐 其他地区 (Other) 27 - laolin
+  - 🌐 其他地区 (Other) 28 - laolin
+  - 🌐 其他地区 (Other) 29 - laolin
+  - 🌐 其他地区 (Other) 30 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -158,5 +475,26 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - laolin
   - 🌐 其他地区 (Other) 08 - laolin
   - 🌐 其他地区 (Other) 09 - laolin
+  - 🌐 其他地区 (Other) 10 - laolin
+  - 🌐 其他地区 (Other) 11 - laolin
+  - 🌐 其他地区 (Other) 12 - laolin
+  - 🌐 其他地区 (Other) 13 - laolin
+  - 🌐 其他地区 (Other) 14 - laolin
+  - 🌐 其他地区 (Other) 15 - laolin
+  - 🌐 其他地区 (Other) 16 - laolin
+  - 🌐 其他地区 (Other) 17 - laolin
+  - 🌐 其他地区 (Other) 18 - laolin
+  - 🌐 其他地区 (Other) 19 - laolin
+  - 🌐 其他地区 (Other) 20 - laolin
+  - 🌐 其他地区 (Other) 21 - laolin
+  - 🌐 其他地区 (Other) 22 - laolin
+  - 🌐 其他地区 (Other) 23 - laolin
+  - 🌐 其他地区 (Other) 24 - laolin
+  - 🌐 其他地区 (Other) 25 - laolin
+  - 🌐 其他地区 (Other) 26 - laolin
+  - 🌐 其他地区 (Other) 27 - laolin
+  - 🌐 其他地区 (Other) 28 - laolin
+  - 🌐 其他地区 (Other) 29 - laolin
+  - 🌐 其他地区 (Other) 30 - laolin
 rules:
 - MATCH,PROXIES
