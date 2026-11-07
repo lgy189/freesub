@@ -6,34 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - laolin
   type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
-- name: 🇵🇱 PL 02 - laolin
-  type: vless
-  server: lte-v2-ws.gacvpn.site
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 03 - laolin
-  type: vless
   server: 212.119.43.76
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
@@ -46,35 +18,7 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇵🇱 PL 04 - laolin
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: 129.101.100.126
-- name: 🇵🇱 PL 05 - laolin
-  type: vless
-  server: 129.101.100.126
-  port: 8443
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lte-v2-ws.gacvpn.site
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 PL 06 - laolin
+- name: 🇵🇱 PL 02 - laolin
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -83,7 +27,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
-- name: 🇵🇱 PL 07 - laolin
+- name: 🇵🇱 PL 03 - laolin
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -100,10 +44,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - laolin
   - 🇵🇱 PL 02 - laolin
   - 🇵🇱 PL 03 - laolin
-  - 🇵🇱 PL 04 - laolin
-  - 🇵🇱 PL 05 - laolin
-  - 🇵🇱 PL 06 - laolin
-  - 🇵🇱 PL 07 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -112,9 +52,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - laolin
   - 🇵🇱 PL 02 - laolin
   - 🇵🇱 PL 03 - laolin
-  - 🇵🇱 PL 04 - laolin
-  - 🇵🇱 PL 05 - laolin
-  - 🇵🇱 PL 06 - laolin
-  - 🇵🇱 PL 07 - laolin
 rules:
 - MATCH,PROXIES
