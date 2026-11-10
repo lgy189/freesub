@@ -13,17 +13,45 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - laolin
   type: ss
-  server: 46.17.47.58
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - laolin
-  type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - laolin
+  type: vless
+  server: 95.163.232.240
+  port: 443
+  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: files.neurixai.app
+  network: ws
+  ws-opts:
+    path: /api/generate
+    headers:
+      Host: files.neurixai.app
+- name: 🇷🇺 俄罗斯 (Russia) 04 - laolin
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
+- name: 🇷🇺 俄罗斯 (Russia) 05 - laolin
+  type: ss
+  server: 46.17.47.58
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -33,6 +61,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - laolin
   - 🇷🇺 俄罗斯 (Russia) 02 - laolin
   - 🇷🇺 俄罗斯 (Russia) 03 - laolin
+  - 🇷🇺 俄罗斯 (Russia) 04 - laolin
+  - 🇷🇺 俄罗斯 (Russia) 05 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +71,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - laolin
   - 🇷🇺 俄罗斯 (Russia) 02 - laolin
   - 🇷🇺 俄罗斯 (Russia) 03 - laolin
+  - 🇷🇺 俄罗斯 (Russia) 04 - laolin
+  - 🇷🇺 俄罗斯 (Russia) 05 - laolin
 rules:
 - MATCH,PROXIES
