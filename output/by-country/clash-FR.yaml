@@ -12,86 +12,6 @@ proxies:
   password: eetk7pw
   udp: true
 - name: 🇫🇷 法国 (France) 02 - laolin
-  type: ss
-  server: 172.99.189.142
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 03 - laolin
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 04 - laolin
-  type: ss
-  server: 167.17.64.175
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 05 - laolin
-  type: vless
-  server: 3.168.217.190
-  port: 443
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d1afk2ndm8pox3.cloudfront.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d1afk2ndm8pox3.cloudfront.net
-- name: 🇫🇷 法国 (France) 06 - laolin
-  type: ss
-  server: 23.162.152.22
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇫🇷 法国 (France) 07 - laolin
-  type: vless
-  server: 3.168.218.6
-  port: 443
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: dkfsoyk9ju2as.cloudfront.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dkfsoyk9ju2as.cloudfront.net
-- name: 🇫🇷 法国 (France) 08 - laolin
-  type: ss
-  server: dns24.m3hrzd.ir
-  port: 1352
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-  udp: true
-- name: 🇫🇷 法国 (France) 09 - laolin
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 10 - laolin
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -102,22 +22,18 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 11 - laolin
+- name: 🇫🇷 法国 (France) 03 - laolin
   type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 2bc80e77-9590-4ded-a48b-0eda493f611b
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 12 - laolin
+  servername: ''
+- name: 🇫🇷 法国 (France) 04 - laolin
   type: vless
   server: 3.169.9.125
   port: 443
@@ -131,7 +47,7 @@ proxies:
     path: /
     headers:
       Host: d2ex4nxd2e01ub.cloudfront.net
-- name: 🇫🇷 法国 (France) 13 - laolin
+- name: 🇫🇷 法国 (France) 05 - laolin
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -142,7 +58,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇫🇷 法国 (France) 14 - laolin
+- name: 🇫🇷 法国 (France) 06 - laolin
   type: vless
   server: 199.232.78.120
   port: 443
@@ -156,9 +72,16 @@ proxies:
     path: /
     headers:
       Host: fraboijji.global.ssl.fastly.net.
-- name: 🇫🇷 法国 (France) 15 - laolin
+- name: 🇫🇷 法国 (France) 07 - laolin
+  type: ss
+  server: 167.17.64.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 08 - laolin
   type: vmess
-  server: 141.95.65.9
+  server: 162.19.204.71
   port: 1234
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -167,6 +90,77 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 09 - laolin
+  type: ss
+  server: 172.99.189.142
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 10 - laolin
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 11 - laolin
+  type: vless
+  server: 3.168.218.9
+  port: 443
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
+- name: 🇫🇷 法国 (France) 12 - laolin
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 13 - laolin
+  type: ss
+  server: 167.17.64.175
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇫🇷 法国 (France) 14 - laolin
+  type: vless
+  server: 51.77.217.70
+  port: 2053
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 15 - laolin
+  type: ss
+  server: 23.162.152.22
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇫🇷 法国 (France) 16 - laolin
   type: vmess
   server: 141.95.65.9
@@ -180,18 +174,7 @@ proxies:
   servername: ''
 - name: 🇫🇷 法国 (France) 17 - laolin
   type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 18 - laolin
-  type: vmess
-  server: 46.105.222.157
+  server: 46.105.222.155
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -200,25 +183,34 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 18 - laolin
+  type: vless
+  server: 3.168.217.190
+  port: 443
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: d2ex4nxd2e01ub.cloudfront.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d2ex4nxd2e01ub.cloudfront.net
 - name: 🇫🇷 法国 (France) 19 - laolin
   type: ss
-  server: 167.17.64.22
+  server: 38.109.228.110
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇫🇷 法国 (France) 20 - laolin
-  type: vless
-  server: 51.77.217.70
-  port: 2053
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  type: ss
+  server: 167.17.64.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 21 - laolin
   type: vless
   server: 51.77.217.70
@@ -232,24 +224,33 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 22 - laolin
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: dns24.m3hrzd.ir
+  port: 1352
+  cipher: chacha20-ietf-poly1305
+  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 - name: 🇫🇷 法国 (France) 23 - laolin
   type: ss
-  server: 167.17.64.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  server: 51.83.61.102
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 29irqk0paakcx19v
   udp: true
 - name: 🇫🇷 法国 (France) 24 - laolin
+  type: vless
+  server: 152.228.162.19
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 25 - laolin
   type: vless
   server: 199.232.78.120
   port: 443
@@ -263,20 +264,17 @@ proxies:
     path: /
     headers:
       Host: fraboijji.global.ssl.fastly.net.
-- name: 🇫🇷 法国 (France) 25 - laolin
-  type: ss
-  server: 51.83.61.102
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 29irqk0paakcx19v
-  udp: true
 - name: 🇫🇷 法国 (France) 26 - laolin
-  type: ss
-  server: 38.109.228.110
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇫🇷 法国 (France) 27 - laolin
   type: vless
   server: 138.124.70.41
