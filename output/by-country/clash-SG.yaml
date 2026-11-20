@@ -5,36 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - laolin
-  type: vless
-  server: 139.162.27.96
-  port: 443
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aka.ms
-- name: 🇸🇬 新加坡 (Singapore) 02 - laolin
   type: ss
-  server: 149.88.106.74
+  server: 15.235.164.133
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇬 新加坡 (Singapore) 03 - laolin
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 04 - laolin
+- name: 🇸🇬 新加坡 (Singapore) 02 - laolin
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -44,6 +21,30 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 03 - laolin
+  type: vless
+  server: 510.150333.xyz
+  port: 21004
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 04 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 05 - laolin
   type: vmess
   server: 149.88.23.207
@@ -56,8 +57,8 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 06 - laolin
   type: vless
-  server: 103.106.229.37
-  port: 21001
+  server: 511.150333.xyz
+  port: 21003
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -67,51 +68,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 07 - laolin
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - laolin
-  type: vless
-  server: 207.148.124.12
-  port: 8443
-  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: www.bing.com
-- name: 🇸🇬 新加坡 (Singapore) 09 - laolin
-  type: vless
-  server: 139.162.27.96
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: free-server.techsonic.dev
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 10 - laolin
-  type: vless
-  server: 510.150333.xyz
-  port: 21004
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 11 - laolin
   type: vless
   server: 511.150333.xyz
   port: 21002
@@ -123,9 +79,21 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 12 - laolin
+- name: 🇸🇬 新加坡 (Singapore) 08 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 09 - laolin
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -133,9 +101,40 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 11 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 12 - laolin
+  type: vless
+  server: 207.148.124.12
+  port: 8443
+  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.bing.com
 - name: 🇸🇬 新加坡 (Singapore) 13 - laolin
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -146,7 +145,7 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 14 - laolin
   type: vless
   server: 511.150333.xyz
-  port: 21003
+  port: 21004
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -168,7 +167,7 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 16 - laolin
   type: vless
   server: 511.150333.xyz
-  port: 21004
+  port: 21003
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -178,18 +177,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 17 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 139.162.27.96
+  port: 443
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: aka.ms
 - name: 🇸🇬 新加坡 (Singapore) 18 - laolin
   type: vmess
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -198,39 +196,9 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 19 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 20 - laolin
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - laolin
   type: vless
   server: 510.150333.xyz
-  port: 21004
+  port: 21003
   uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
   tls: true
@@ -239,10 +207,42 @@ proxies:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 23 - laolin
+- name: 🇸🇬 新加坡 (Singapore) 20 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 21 - laolin
   type: vless
   server: 511.150333.xyz
-  port: 21001
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 22 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 23 - laolin
+  type: vless
+  server: 103.106.229.37
+  port: 21004
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -254,7 +254,7 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 24 - laolin
   type: vless
   server: 511.150333.xyz
-  port: 21004
+  port: 21001
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -264,20 +264,8 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 25 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 26 - laolin
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -285,7 +273,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 27 - laolin
+- name: 🇸🇬 新加坡 (Singapore) 26 - laolin
   type: vless
   server: 510.150333.xyz
   port: 21003
@@ -297,17 +285,28 @@ proxies:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 28 - laolin
+- name: 🇸🇬 新加坡 (Singapore) 27 - laolin
   type: vmess
-  server: 15.235.144.92
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 28 - laolin
+  type: vless
+  server: 510.150333.xyz
+  port: 21003
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
   tls: true
   skip-cert-verify: true
-  servername: None
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 29 - laolin
   type: vmess
   server: 149.88.23.207
@@ -320,7 +319,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 30 - laolin
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -330,7 +329,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 31 - laolin
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -340,7 +339,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 32 - laolin
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -351,7 +350,7 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 33 - laolin
   type: vless
   server: 511.150333.xyz
-  port: 21004
+  port: 21002
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -361,18 +360,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 34 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 35 - laolin
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -382,7 +369,31 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 35 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21002
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 36 - laolin
+  type: vless
+  server: 510.150333.xyz
+  port: 21003
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 37 - laolin
   type: vmess
   server: ww11.levikogjgfdd.ir
   port: 18000
@@ -392,19 +403,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 37 - laolin
-  type: vless
-  server: 510.150333.xyz
-  port: 21001
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 38 - laolin
+  type: ss
+  server: 15.235.182.183
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 39 - laolin
   type: vless
   server: 511.150333.xyz
   port: 21004
@@ -415,17 +421,7 @@ proxies:
   reality-opts:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 39 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 40 - laolin
   type: vmess
   server: 149.88.23.207
@@ -437,15 +433,17 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 41 - laolin
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 103.106.229.37
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 42 - laolin
   type: vmess
   server: 149.88.23.207
@@ -458,16 +456,16 @@ proxies:
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 43 - laolin
   type: vless
-  server: 511.150333.xyz
+  server: 510.150333.xyz
   port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 44 - laolin
   type: vmess
   server: ww11.levikogjgfdd.ir
@@ -479,43 +477,21 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 45 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 510.150333.xyz
+  port: 21001
+  uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 46 - laolin
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 47 - laolin
-  type: ss
-  server: 51.79.228.131
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 48 - laolin
-  type: ss
-  server: 149.88.107.47
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 49 - laolin
   type: vless
   server: 511.150333.xyz
-  port: 21003
+  port: 21001
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -524,9 +500,42 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 47 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 48 - laolin
+  type: vless
+  server: 207.148.124.12
+  port: 8443
+  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: www.bing.com
+- name: 🇸🇬 新加坡 (Singapore) 49 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 50 - laolin
   type: vmess
-  server: 149.88.23.202
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -537,7 +546,7 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 51 - laolin
   type: vless
   server: 511.150333.xyz
-  port: 21001
+  port: 21002
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -549,7 +558,7 @@ proxies:
 - name: 🇸🇬 新加坡 (Singapore) 52 - laolin
   type: vless
   server: 510.150333.xyz
-  port: 21003
+  port: 21002
   uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
   tls: true
@@ -559,17 +568,15 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 53 - laolin
-  type: vless
-  server: 103.106.229.37
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 54 - laolin
   type: vmess
   server: 149.88.23.207
@@ -581,18 +588,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 55 - laolin
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 510.150333.xyz
+  port: 21004
+  uuid: 67952583-8572-42e1-943d-0602794f885b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 56 - laolin
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -601,6 +610,20 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 57 - laolin
+  type: vless
+  server: 104.17.147.208
+  port: 443
+  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: b.rack.sxsc.dpdns.org
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: b.rack.sxsc.dpdns.org
+- name: 🇸🇬 新加坡 (Singapore) 58 - laolin
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -610,45 +633,30 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 58 - laolin
-  type: vless
-  server: 139.162.27.96
-  port: 443
-  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aka.ms
 - name: 🇸🇬 新加坡 (Singapore) 59 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 60 - laolin
-  type: vless
-  server: freev2.cloudflare.182682.xyz
-  port: 443
-  uuid: d38b03c3-ff14-4ee0-80de-cd089f84ee38
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ap-south.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: ap-south.862400.xyz
 - name: 🇸🇬 新加坡 (Singapore) 61 - laolin
   type: vless
-  server: 511.150333.xyz
-  port: 21001
+  server: 103.106.229.37
+  port: 21004
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
   udp: true
   tls: true
@@ -668,18 +676,33 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 63 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 64 - laolin
+  type: ss
+  server: 51.79.228.131
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 65 - laolin
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 66 - laolin
   type: vmess
   server: 149.88.23.207
   port: 18000
@@ -689,42 +712,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 65 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 66 - laolin
-  type: vless
-  server: 43.170.8.95
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 - name: 🇸🇬 新加坡 (Singapore) 67 - laolin
   type: ss
-  server: 149.88.107.74
+  server: 149.88.106.74
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇸🇬 新加坡 (Singapore) 68 - laolin
   type: vmess
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -733,20 +730,15 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 69 - laolin
-  type: vless
-  server: 510.150333.xyz
-  port: 21004
-  uuid: 67952583-8572-42e1-943d-0602794f885b
+  type: ss
+  server: 149.88.107.47
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 70 - laolin
   type: vmess
-  server: ww11.levikogjgfdd.ir
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -765,26 +757,26 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 72 - laolin
-  type: vless
-  server: 510.150333.xyz
-  port: 21003
-  uuid: 67952583-8572-42e1-943d-0602794f885b
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 73 - laolin
-  type: vless
-  server: 207.148.124.12
-  port: 8443
-  uuid: bcdb425f-80bc-4ec8-92a5-8edf53639c01
+  type: vmess
+  server: 15.235.144.92
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.bing.com
+  servername: None
 - name: 🇸🇬 新加坡 (Singapore) 74 - laolin
   type: vmess
   server: 149.88.23.207
@@ -796,16 +788,29 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 75 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 139.162.27.96
+  port: 443
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: aka.ms
 - name: 🇸🇬 新加坡 (Singapore) 76 - laolin
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 77 - laolin
   type: vless
   server: 511.150333.xyz
   port: 21002
@@ -817,7 +822,17 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 77 - laolin
+- name: 🇸🇬 新加坡 (Singapore) 78 - laolin
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 79 - laolin
   type: vless
   server: 510.150333.xyz
   port: 21004
@@ -827,32 +842,6 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 78 - laolin
-  type: vless
-  server: freev2.cloudflare.182682.xyz
-  port: 443
-  uuid: d38b03c3-ff14-4ee0-80de-cd089f84ee38
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ap-south.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048fp=chrome
-    headers:
-      Host: ap-south.862400.xyz
-- name: 🇸🇬 新加坡 (Singapore) 79 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 80 - laolin
@@ -866,18 +855,22 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 81 - laolin
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 139.162.27.96
+  port: 2096
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free-server.techsonic.dev
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
 - name: 🇸🇬 新加坡 (Singapore) 82 - laolin
   type: vmess
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -886,196 +879,6 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 83 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 84 - laolin
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 85 - laolin
-  type: vless
-  server: 510.150333.xyz
-  port: 21003
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 86 - laolin
-  type: vless
-  server: 103.106.229.37
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 87 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21002
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 88 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21002
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 89 - laolin
-  type: vless
-  server: 103.106.229.37
-  port: 21004
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 90 - laolin
-  type: vless
-  server: 510.150333.xyz
-  port: 21002
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 91 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 92 - laolin
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 93 - laolin
-  type: vmess
-  server: 149.88.23.202
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 94 - laolin
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 95 - laolin
-  type: ss
-  server: 15.235.182.183
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 96 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 97 - laolin
-  type: vless
-  server: 511.150333.xyz
-  port: 21002
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 98 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 99 - laolin
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 100 - laolin
-  type: ss
-  server: 15.235.164.133
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇬 新加坡 (Singapore) 101 - laolin
   type: vless
   server: 511.150333.xyz
   port: 21001
@@ -1087,7 +890,56 @@ proxies:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 102 - laolin
+- name: 🇸🇬 新加坡 (Singapore) 84 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 85 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 86 - laolin
+  type: ss
+  server: 149.88.107.74
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇬 新加坡 (Singapore) 87 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 88 - laolin
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 89 - laolin
   type: vmess
   server: 149.88.23.202
   port: 18000
@@ -1097,9 +949,167 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 90 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 91 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 92 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 93 - laolin
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 94 - laolin
+  type: vless
+  server: 103.106.229.37
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 95 - laolin
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 96 - laolin
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 97 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 98 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 99 - laolin
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 100 - laolin
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 101 - laolin
+  type: vless
+  server: 37.120.222.70
+  port: 8082
+  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 102 - laolin
+  type: vless
+  server: 43.170.8.95
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇸🇬 新加坡 (Singapore) 103 - laolin
   type: vmess
   server: 149.88.23.207
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 104 - laolin
+  type: vmess
+  server: ww11.levikogjgfdd.ir
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -1215,6 +1225,7 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 101 - laolin
   - 🇸🇬 新加坡 (Singapore) 102 - laolin
   - 🇸🇬 新加坡 (Singapore) 103 - laolin
+  - 🇸🇬 新加坡 (Singapore) 104 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -1323,5 +1334,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 101 - laolin
   - 🇸🇬 新加坡 (Singapore) 102 - laolin
   - 🇸🇬 新加坡 (Singapore) 103 - laolin
+  - 🇸🇬 新加坡 (Singapore) 104 - laolin
 rules:
 - MATCH,PROXIES
