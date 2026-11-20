@@ -29,8 +29,8 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - laolin
   type: vmess
   server: 47.244.120.197
-  port: 36703
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
   alterId: 0
   cipher: auto
   udp: true
@@ -41,20 +41,6 @@ proxies:
     path: /arki
     headers:
       Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - laolin
-  type: vless
-  server: 103.219.195.65
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +49,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - laolin
   - 🇭🇰 中国香港 (Hong Kong) 02 - laolin
   - 🇭🇰 中国香港 (Hong Kong) 03 - laolin
-  - 🇭🇰 中国香港 (Hong Kong) 04 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -72,6 +57,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - laolin
   - 🇭🇰 中国香港 (Hong Kong) 02 - laolin
   - 🇭🇰 中国香港 (Hong Kong) 03 - laolin
-  - 🇭🇰 中国香港 (Hong Kong) 04 - laolin
 rules:
 - MATCH,PROXIES
