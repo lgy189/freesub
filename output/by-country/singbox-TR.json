@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 PL 01 - laolin",
-        "🇵🇱 PL 02 - laolin"
+        "🇹🇷 土耳其 (Turkey) 01 - laolin",
+        "🇹🇷 土耳其 (Turkey) 02 - laolin"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 PL 01 - laolin",
-        "🇵🇱 PL 02 - laolin"
+        "🇹🇷 土耳其 (Turkey) 01 - laolin",
+        "🇹🇷 土耳其 (Turkey) 02 - laolin"
       ],
       "url": "https://www.google.com/generate_204"
     },
