@@ -49,7 +49,7 @@ proxies:
   udp: true
 - name: 🇦🇹 AT 06 - laolin
   type: vmess
-  server: 154.47.19.225
+  server: leviko-at0752.shopingggg.ir
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -58,20 +58,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
-- name: 🇦🇹 AT 07 - laolin
-  type: vless
-  server: 172.67.199.12
-  port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ancient-haze-d203.vpnetwork3567.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ancient-haze-d203.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +69,6 @@ proxy-groups:
   - 🇦🇹 AT 04 - laolin
   - 🇦🇹 AT 05 - laolin
   - 🇦🇹 AT 06 - laolin
-  - 🇦🇹 AT 07 - laolin
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -95,6 +80,5 @@ proxy-groups:
   - 🇦🇹 AT 04 - laolin
   - 🇦🇹 AT 05 - laolin
   - 🇦🇹 AT 06 - laolin
-  - 🇦🇹 AT 07 - laolin
 rules:
 - MATCH,PROXIES
